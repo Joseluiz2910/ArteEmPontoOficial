@@ -1,0 +1,249 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "projects projects projects projects"
+    "about about about about"
+    "contacts contacts contacts contacts"
+    "where where where where"
+    "footer footer footer footer";
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: #E1E2E1;
+}
+
+.header {
+    grid-area: header;
+    background-color: #a6d8d9;
+}
+
+.header .header-container{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    transition: 0.3s;
+}
+
+.header h1:hover {
+    color: #e9c1bf;
+}
+
+/* --- PROJECTS --- */
+.projects {
+    grid-area: projects;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.projects h2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 4rem;
+}
+
+.projects .imagem-um {
+    background: url(../images/imagem-tres.jpeg) center center no-repeat;
+    height: 440px;
+}
+
+/* --- ABOUT --- */
+.about {
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    padding: 100px 20px;
+    grid-gap: 30px;
+
+}
+
+.about h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.about p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 50px;
+}
+
+.about .imagem {
+    box-shadow: 10px 10px 50px #000;
+}
+
+.about .imagem.esquerda {
+    background: url(../images/imagem-quatro.png) center center no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.about .imagem.direita {
+    background: url(../images/imagem-cinco.png) center center no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+/* --- SERVICES --- */
+
+.services {
+    grid-area: services;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;    
+}
+
+.services div {
+    padding: 50px 30px;
+}
+
+.services div img {
+    height: 300px;
+    margin-bottom: 20px;
+    
+}
+
+.services div h3 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.services div p {
+    font-size: 1.8rem;
+}
+
+.services .lobo {
+    background-color: #a6d8d9;
+}
+
+.services .anime {
+    background-color: #e9c1bf;
+}
+
+/* --- CONTACTS --- */
+
+.contacts {
+    grid-area: contacts;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts h3 {
+    font-size: 5rem;
+    margin-bottom: 30px;
+}
+
+.contacts p {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.contacts .social a {
+    font-size: 2rem;
+    line-height: 50px;
+}
+
+.contacts .social i {
+    font-size: 5rem;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts .social  .fab.fa-instagram:hover {
+    color: #405DE6;
+    font-weight: 700;
+}
+
+.contacts .social  .fab.fa-whatsapp:hover {
+    color: #25D366;
+    font-weight: 700;
+}
+
+/* --- WHERE --- */
+
+.where {
+    grid-area: where;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.where h3 {
+    font-size: 2rem;
+    padding: 30px 0;
+    line-height: 30px;
+}
+
+.where .mapa-pequeno {
+    display: none;
+}
+
+/* --- HEADER --- */
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #a6d8d9;
+    padding: 50px 0 0 0;
+}
+
+.footer .logo{
+    background: url(../images/logo.png) center center no-repeat;
+    height: 160px;
+}
+
+.footer .logo h4 {
+    font-size: 0;
+}
+
+.footer nav {
+    margin: 40px;
+}
+
+.footer nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer nav ul li a{
+    transition: 0.3s;
+    font-size: 1.8rem;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.footer nav ul li a:hover {
+    color: #000;
+    background-color: #e9c1bf;
+}
+
+.footer .footer-copy {
+    font-size: 2rem;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+}

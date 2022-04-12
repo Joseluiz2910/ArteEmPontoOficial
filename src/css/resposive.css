@@ -1,0 +1,55 @@
+/* --- PROJECTS --- */
+
+@media (max-width: 765px) {
+    .projects .imagem-um {
+        background: url(../images/imagem-um.png) center center no-repeat;
+        background-size: cover;
+        height: 400px;
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+
+/* --- ABOUT --- */
+
+@media (max-width: 870px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- SERVICES --- */
+
+@media (max-width: 765px) {
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .services div p {
+        margin-bottom: 30px;
+    }
+}
+
+/* --- WHERE --- */
+
+@media (max-width: 870px) {
+    .where .mapa-medio {
+        display: none;
+    }
+
+    .where .mapa-pequeno {
+        display: block;
+    }
+}
+
+/* --- FOOTER --- */
+
+@media (max-width: 500px) {
+    .footer nav ul {
+        flex-direction: column;
+    }
+
+    .footer nav ul li{
+        padding: 10px 0;
+    }
+}
