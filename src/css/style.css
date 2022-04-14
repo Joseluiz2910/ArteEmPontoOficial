@@ -15,24 +15,21 @@ body {
 .header {
     grid-area: header;
     background-color: #a6d8d9;
+    font-size: 0rem;
 }
 
 .header .header-container{
     display: flex;
-    padding: 20px 40px;
+    padding: 20px 20px;
     justify-content: space-between;
     align-items: center;
     min-height: 75px;
 }
 
-.header h1 {
-    font-size: 3rem;
-    transition: 0.3s;
+.header img {
+    height: 80px;
 }
 
-.header h1:hover {
-    color: #e9c1bf;
-}
 
 /* --- PROJECTS --- */
 .projects {
@@ -246,4 +243,8 @@ body {
     height: 60px;
     background-color: #000;
     color: #fff;
+}
+
+.footer-copy h3 {
+    padding: 15px;
 }
