@@ -15,7 +15,6 @@ body {
 .header {
     grid-area: header;
     background-color: #a6d8d9;
-    font-size: 0rem;
 }
 
 .header .header-container{
